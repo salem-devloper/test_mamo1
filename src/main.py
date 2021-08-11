@@ -36,6 +36,7 @@ def main() -> None:
                 print('images')   
                 images, labels = import_minimias_dataset(data_dir="./test_mamo1/data/{}/images_original".format(config.dataset),label_encoder=l_e)
             except ValueError:  #raised if `y` is empty.
+                print("ex")
                 pass
             
             # Split dataset into training/test/validation sets (60%/20%/20% split).
