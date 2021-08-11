@@ -45,7 +45,7 @@ def import_cbisddsm_training_dataset(label_encoder):
     :param label_encoder: The label encoder.
     :return: Two arrays, one for the image paths and one for the encoded labels.
     """
-    df = pd.read_csv("../data/CBIS-DDSM/training.csv")
+    df = pd.read_csv("./test_mamo1/data/CBIS-DDSM/training.csv")
     list_IDs = df['img_path'].values
     labels = encode_labels(df['label'].values, label_encoder)
     return list_IDs, labels
