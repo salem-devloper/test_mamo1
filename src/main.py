@@ -32,8 +32,7 @@ def main() -> None:
         # Multiclass classification (mini-MIAS dataset)
         if config.dataset == "mini-MIAS":
             # Import entire dataset.
-            images, labels = import_minimias_dataset(data_dir="./test_mamo1/data/{}/images_original".format(config.dataset),
-                                                     label_encoder=l_e)
+            images, labels = import_minimias_dataset(data_dir="./test_mamo1/data/{}/images_original".format(config.dataset),label_encoder=l_e)
 
             # Split dataset into training/test/validation sets (60%/20%/20% split).
             X_train, X_test, y_train, y_test = dataset_stratified_split(split=0.20, dataset=images, labels=labels)
