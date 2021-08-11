@@ -32,7 +32,8 @@ def main() -> None:
         # Multiclass classification (mini-MIAS dataset)
         if config.dataset == "mini-MIAS":
             # Import entire dataset.
-            try:    
+            try: 
+                print('images')   
                 images, labels = import_minimias_dataset(data_dir="./test_mamo1/data/{}/images_original".format(config.dataset),label_encoder=l_e)
             except ValueError:  #raised if `y` is empty.
                 pass
