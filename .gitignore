@@ -1,12 +1,11 @@
 # Local files
 
-data/mini-MIAS/images_original
-data/mini-MIAS/images_processed
+
+
 .idea
 *.tar.gz
 *.zip
-output
-saved_models
+
 setup.sh
 
 # ______________________________________________________________________________________________________________________
