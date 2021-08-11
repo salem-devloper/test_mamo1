@@ -68,10 +68,10 @@ def main() -> None:
             print_error_message()
 
         # Save the model
-        model.save("../saved_models/dataset-{}_model-{}_imagesize-{}.h5".format(config.dataset, config.model, config.imagesize))
+        model.save("./test_mamo1/saved_models/dataset-{}_model-{}_imagesize-{}.h5".format(config.dataset, config.model, config.imagesize))
 
     elif config.run_mode == "test":
-        model = load_model("../saved_models/dataset-{}_model-{}_imagesize-{}.h5".format(config.dataset, config.model, config.imagesize))
+        model = load_model("./test_mamo1/saved_models/dataset-{}_model-{}_imagesize-{}.h5".format(config.dataset, config.model, config.imagesize))
 
     # Evaluate model results.
     if config.dataset == "mini-MIAS":
